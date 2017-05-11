@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">iWeight</string>
+
+    <string name="aktifitas_prompt">Pilih tingkatan</string>
+    <string-array name="aktifitas_array">
+        <item>Tidak Aktif</item>
+        <item>Kurang Aktif</item>
+        <item>Aktif</item>
+        <item>Sangat Aktif</item>
+    </string-array>
+
+</resources>
