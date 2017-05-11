@@ -1,33 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#dbdbdb">
 
-    <LinearLayout
-        android:id="@+id/linear_kalori"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginTop="24dp">
-
-        <TextView
-            android:id="@+id/txtTittleKalori"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear_kalori"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="Kebutuhan Kalori : "/>
-        <TextView
-            android:id="@+id/txtKalori"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="30dp"
-            android:text="2000 ccal"
-            />
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="#fff">
+            <TextView
+                android:id="@+id/txtTittleKalori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="Kebutuhan Kalori Anda: "/>
+            <TextView
+                android:id="@+id/txtKalori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:text="2000 ccal" />
+            <TextView
+                android:id="@+id/txtTittleKalori2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="Kalori Anda Saat Ini: "/>
+            <TextView
+                android:id="@+id/txtKalori2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:text="0 ccal" />
 
-    </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:layout_marginTop="20dp"
+                android:background="#dbdbdb" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menu Makan :"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textAlignment="center"
+                android:background="#f39c12"
+                android:text="+ Tambah"
+                android:textSize="20sp"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </ScrollView>
+
 
 
 

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dbdbdb">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="iWeight"
+            android:textSize="50sp"
+            android:textColor="#3498db"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Adalah sebuah aplikasi yang bisa membantu anda untuk mengetahui berat badan ideal anda.
+\niWeight juga menyediakan tips sesuai dengan yang anda butuhkan."
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:layout_marginTop="30dp"
+            android:background="#dbdbdb" />
+        <LinearLayout
+            android:id="@+id/LinearShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ico_share"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Share"
+                android:textSize="20sp"
+                android:background="#fff"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:layout_marginTop="10dp"
+            android:background="#dbdbdb" />
+
+        <LinearLayout
+            android:id="@+id/LinearFeedBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ico_feedback"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Feedback"
+                android:background="#fff"
+                android:textSize="20sp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

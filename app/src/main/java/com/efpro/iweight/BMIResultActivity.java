@@ -6,10 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-/**
- * Created by rzapalupi on 5/8/2017.
- */
+import android.widget.Toast;
 
 public class BMIResultActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -38,6 +35,8 @@ public class BMIResultActivity extends AppCompatActivity implements View.OnClick
         txtResultBMR.setText(hasilbmr + " CCAL");
         txtStatus.setText(statusbmi);
         txtDeskripsi.setText(deskripsi);
+
+
 
         btnKalori_2.setOnClickListener(this);
     }

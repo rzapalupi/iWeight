@@ -8,10 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-/**
- * Created by rzapalupi on 5/8/2017.
- */
-
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     //Inisialisasi View

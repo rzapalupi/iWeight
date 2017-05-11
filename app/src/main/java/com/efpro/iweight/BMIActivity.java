@@ -14,10 +14,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-/**
- * Created by rzapalupi on 5/8/2017.
- */
-
 public class BMIActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener {
     //inisialisasi
     TextView txtResultBMI;
@@ -108,16 +104,16 @@ public class BMIActivity extends AppCompatActivity implements View.OnClickListen
             } else if (rdbPria.isChecked() || rdbWanita.isChecked()) {
                 if (CountBMI() < 18.5) {
                     status  = "Underweight";
-                    deskripsi = "Kurus lu! makan sana yang banyak";
+                    deskripsi = "Anda terlalu kurus." + '\n' + "Perbanyaklah makan makanan berkalori untuk menambah berat badan anda.";
                 } else if (CountBMI() >= 18.5 && CountBMI() <= 24.9) {
                     status = "Normal";
-                    deskripsi = "Mantap, ideal banget makan sehat rajin olahraga";
+                    deskripsi = "Selamat, berat badan anda ideal." + '\n' + "Tetaplah berolahraga untuk menjaga daya tahan tubuh anda.";
                 } else if (CountBMI() >= 25 && CountBMI() <= 29.9) {
                     status = "Overweight";
-                    deskripsi = "Gembrot, olahraga sana, jangan ngemil terus";
+                    deskripsi = "Anda gemuk." + '\n' + "Perbanyaklah olahraga untuk membakar lemak pada tubuh anda.";
                 } else if (CountBMI() >= 30) {
                     status = "Obesity";
-                    deskripsi = "Mending ke dokter coy, ngapain pake aplikasi ini";
+                    deskripsi = "Anda terlalu gemuk." + '\n' + "Konsultasikan ke dokter ahli.";
                 }
                 CountBMR();
                 String resultBMI = String.format("%.2f",CountBMI());
@@ -175,3 +171,4 @@ public class BMIActivity extends AppCompatActivity implements View.OnClickListen
         return bmr;
     }
 }
+

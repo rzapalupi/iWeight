@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dbdbdb">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="#fff"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tips and Trick Menambah Berat Badan Anda"
+                    android:textSize="30sp"
+                    android:gravity="center"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/background_dasar"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Berat badan seseorang juga dipengaruhi oleh pola makan dan olahraga yang dilakukannya. Oleh karena itu, jika Anda merasa kurang percaya diri dan ingin tampil lebih berisi, maka Anda sebaiknya berusaha menambah berat badan. Sebagai langkah awal, Anda bisa mengubah beberapa kebiasaan kecil sehari-hari. Pola makan dan olahraga menjadi kuncinya. Untuk itu, Anda bisa menggunakan tips-tips berikut sebagai cara cepat menambah berat badan:
+                    dst..." />
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

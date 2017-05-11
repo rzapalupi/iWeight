@@ -1,216 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#dbdbdb">
 
     <LinearLayout
-        android:id="@+id/linep1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:padding="20dp"
+        android:layout_gravity="center"
         android:orientation="vertical">
 
         <LinearLayout
-             android:id="@+id/line1"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/txtUmur"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="Umur" />
-
-            <TextView
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:text=":" />
-
-            <EditText
-                android:id="@+id/edtUmur"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:inputType="number"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Tahun" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/line2"
+            android:id="@+id/linep1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/line1"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/txtGender"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="Gender" />
-
-            <TextView
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:text=":" />
-
-            <RadioGroup
-                android:id="@+id/rdgGender"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
                 android:orientation="horizontal">
 
-                <RadioButton
-                    android:id="@+id/rdbPria"
+                <TextView
+                    android:id="@+id/txtUmur"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Umur"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/edtUmur"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:textSize="20sp"/>
+
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Pria" />
+                    android:text="tahun"
+                    android:textSize="20sp"/>
 
-                <RadioButton
-                    android:id="@+id/rdbWanita"
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/line1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtGender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Gender"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="20sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rdgGender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdbPria"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Pria"
+                        android:textColor="@color/text_default"
+                        android:textSize="20sp"/>
+
+                    <RadioButton
+                        android:id="@+id/rdbWanita"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Wanita"
+                        android:textColor="@color/text_default"
+                        android:textSize="20sp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtBeratBadan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Berat Badan"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/edtBeratBadan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:inputType="numberDecimal"
+                    android:textSize="20sp"/>
+
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="Wanita" />
+                    android:text="kg"
+                    android:textSize="20sp"/>
 
-            </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line4"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtTinggiBadan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Tinggi Badan"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/edtTinggiBadan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:inputType="numberDecimal"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="cm"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line5"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Aktifitas"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:prompt="@string/aktifitas_prompt"
+                    android:entries="@array/aktifitas_array"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_default"/>
+            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/line3"
+            android:id="@+id/linep2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/txtBeratBadan"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="Berat Badan" />
-
-            <TextView
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:text=":" />
-
-            <EditText
-                android:id="@+id/edtBeratBadan"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:inputType="numberDecimal"/>
-
-            <TextView
-                android:layout_width="0dp"
+            <Button
+                android:id="@+id/btnCount"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Kg" />
+                android:text="Hitung BMI"
+                android:textColor="#fff"
+                android:background="@drawable/button_bmi"
+                android:textSize="20sp"/>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/line4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/txtTinggiBadan"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="Tinggi Badan" />
-
-            <TextView
-                android:layout_width="10dp"
-                android:layout_height="wrap_content"
-                android:text=":" />
-
-            <EditText
-                android:id="@+id/edtTinggiBadan"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:inputType="numberDecimal"/>
-
-            <TextView
-                android:layout_width="0dp"
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Cm" />
-
+                android:text="RESET"
+                android:textColor="#fff"
+                android:background="@drawable/button_bmi"
+                android:textSize="20sp"/>
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/line5"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="Aktifitas" />
-
-            <TextView
-            android:layout_width="10dp"
-            android:layout_height="wrap_content"
-            android:text=":" />
-
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:prompt="@string/aktifitas_prompt"
-                android:entries="@array/aktifitas_array"/>
-        </LinearLayout>
-
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linep2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginTop="12dp"
-        android:layout_below="@+id/linep1">
 
-        <Button
-            android:id="@+id/btnCount"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="COUNT"/>
 
-        <Button
-            android:id="@+id/btnReset"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="RESET"/>
-
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>

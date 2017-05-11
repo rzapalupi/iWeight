@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">iWeight</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="aktifitas_prompt">Pilih tingkatan</string>
     <string-array name="aktifitas_array">
@@ -9,4 +11,25 @@
         <item>Sangat Aktif</item>
     </string-array>
 
+    <string-array name="judul_tips">
+        <item index="0">
+            <item index="0">Makanan Sehat Penambah Berat Badan</item>
+            <item index="1">Menambah Berat Badan Wanita</item>
+            <item index="2">Tips Menambah Berat badan</item>
+        </item>
+        <item index="1">
+            <item index="0">Tips Menjaga Berat Badan</item>
+            <item index="1">Tips Merawat Tubuh</item>
+        </item>
+        <item index="2">
+            <item index="0">Macam Jenis Diet</item>
+            <item index="1">Menu Diet</item>
+            <item index="2">Tidur Setelah Makan</item>
+            <item index="2">Tips Makan Malam</item>
+        </item>
+        <item index="3">
+            <item index="0">Mencegah Diabetes</item>
+            <item index="1">Obesitas</item>
+        </item>
+    </string-array>
 </resources>
