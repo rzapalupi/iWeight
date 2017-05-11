@@ -26,6 +26,31 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         //Event
         btnLogin.setOnClickListener(this);
+        edtUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                edtUser.setHint("");
+            }
+        });
+        edtUser.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                edtUser.setHint("Username");
+            }
+        });
+
+        edtPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                edtPass.setHint("");
+            }
+        });
+        edtPass.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                edtPass.setHint("Password");
+            }
+        });
     }
 
     @Override
@@ -43,8 +68,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 edtPass.getText().toString().isEmpty()) {
             edtUser.setError("User is empty");
             edtPass.setError("Password is empty");
-        } else if (edtUser.getText().toString().equalsIgnoreCase("admin")) {
-            if (edtPass.getText().toString().equalsIgnoreCase("admin")) {
+        } else if (edtUser.getText().toString().equalsIgnoreCase("user")) {
+            if (edtPass.getText().toString().equalsIgnoreCase("user")) {
 //                Toast.makeText(this, "Login Sukses",
 //                        Toast.LENGTH_SHORT).show();
 

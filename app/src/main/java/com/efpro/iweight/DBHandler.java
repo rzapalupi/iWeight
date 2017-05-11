@@ -1,9 +1,5 @@
 package com.efpro.iweight;
 
-/**
- * Created by rzapalupi on 5/11/2017.
- */
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

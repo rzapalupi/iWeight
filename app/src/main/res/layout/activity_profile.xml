@@ -35,7 +35,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
-                android:inputType="number"
                 android:textSize="20sp"/>
 
         </LinearLayout>
@@ -65,7 +64,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:inputType="number"
                 android:textSize="20sp"/>
 
             <TextView
@@ -226,14 +224,14 @@
 
             <Button
                 android:id="@+id/btnCancel"
-                android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
+                android:background="@drawable/button_about"
                 android:text="Batal"
                 android:textColor="#fff"
-                android:background="@drawable/button_about"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

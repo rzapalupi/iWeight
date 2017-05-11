@@ -5,7 +5,8 @@
     android:background="#dbdbdb">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -14,23 +15,28 @@
                 android:background="#fff"
                 android:padding="20dp">
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tips and Trick Menambah Berat Badan Anda"
                     android:textSize="30sp"
                     android:gravity="center"/>
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/background_dasar"
+                    android:background="@drawable/tips_foto_kurus"
                     android:layout_gravity="center"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Berat badan seseorang juga dipengaruhi oleh pola makan dan olahraga yang dilakukannya. Oleh karena itu, jika Anda merasa kurang percaya diri dan ingin tampil lebih berisi, maka Anda sebaiknya berusaha menambah berat badan. Sebagai langkah awal, Anda bisa mengubah beberapa kebiasaan kecil sehari-hari. Pola makan dan olahraga menjadi kuncinya. Untuk itu, Anda bisa menggunakan tips-tips berikut sebagai cara cepat menambah berat badan:
-                    dst..." />
+                    android:text="          Berat badan seseorang juga dipengaruhi oleh pola makan dan olBerat badan seseorang juga dipengaruhi oleh pola makan dan olahraga yang dilakukannya. Oleh karena itu, jika Anda merasa kurang percaya diri dan ingin tampil lebih berisi, maka Anda sebaiknya berusaha menambah berat badan. Sebagai langkah awal, Anda bisa mengubah beberapa kebiasaan kecil sehari-hari..
+Pola makan dan olahraga menjadi kuncinya. Untuk itu, Anda bisa menggunakan tips-tips berikut sebagai cara cepat menambah berat badan:
+\n\n1.	Pola Makan
+\n              Orang bertubuh kurus perlu makan dengan interval lebih sering dalam satu hari untuk meningkatkan berat badannya. Cara ini akan membantu Anda yang kesulitan menambah porsi makan. Tetapkan juga jadwal dan interval makan yang paling cocok karena kondisi fisik setiap orang berbeda. Jika sudah menemukannya, jalani secara disiplin dan teratur. Siapkan juga cemilan sehat berkalori tinggi seperti kacang-kacangan, selai kacang, buah-buahan kering, keju, dan apokat. Penuhi kebutuhan cairan tubuh dengan susu rendah lemak atau jus. Jangan lupa memberi jeda untuk minum 30 menit sebelum atau sesudah makan, karena minum saat makan justru akan membuat Anda cepat kenyang.
+\n\n2.	Olahraga
+\n              Olahraga sangat penting bagi Anda yang ingin meningkatkan berat badan karena otot memiliki bobot yang lebih tinggi dibandingkan lemak. Fokus pada olahraga angkat beban atau body building agar massa otot bertambah. Anda juga dapat melakukan push up, crunces, atau squat jump di rumah sambil menonton televisi di waktu senggang. Berolahraga juga membantu meningkatkan rasa lapar dan menambah nafsu makan Anda.
+" />
             </LinearLayout>
     </ScrollView>
 </RelativeLayout>

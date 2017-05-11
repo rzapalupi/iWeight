@@ -25,7 +25,8 @@
         android:id="@+id/RelativeMenuAtas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/garis_tengah_main_menu">
+        android:layout_above="@+id/RelativeMenuBawah"
+        android:layout_alignParentStart="true">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -38,7 +39,7 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <TextView
-                    android:id="@+id/EditProfile"
+                    android:id="@+id/txtNama"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -47,6 +48,7 @@
                     android:textSize="40sp"
                     android:textColor="#fff"/>
                 <TextView
+                    android:id="@+id/txtUmur"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -55,6 +57,7 @@
                     android:textSize="20sp"
                     android:textColor="#fff"/>
                 <TextView
+                    android:id="@+id/txtGender"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -62,6 +65,18 @@
                     android:text="Pria"
                     android:textSize="20sp"
                     android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/edit_profile"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -74,7 +89,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="20dp">
-                <Button
+                <TextView
+                    android:id="@+id/txtBeratBadan"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -83,7 +99,8 @@
                     android:textColor="#fff"
                     android:textAlignment="center"
                     android:background="@android:color/transparent"/>
-                <Button
+                <TextView
+                    android:id="@+id/txtTinggiBadan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -98,10 +115,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-
                 android:layout_margin="20dp"
                 android:background="@drawable/kotak_menu">
                 <TextView
+                    android:id="@+id/txtStatusMenu"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="6"
@@ -110,22 +127,8 @@
                     android:textColor="#fff"
                     android:textAlignment="center"
                     android:padding="10dp"/>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginRight="50dp"
-                    android:background="#fff"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="6"
-                    android:text="Berat Badan Ideal Anda : 50kg"
-                    android:textSize="20sp"
-                    android:textColor="#fff"
-                    android:textAlignment="center"
-                    android:padding="10dp"/>
             </LinearLayout>
+
 
         </LinearLayout>
     </RelativeLayout>

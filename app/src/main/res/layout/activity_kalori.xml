@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#dbdbdb">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
         <LinearLayout
             android:id="@+id/linear_kalori"
             android:layout_width="match_parent"
@@ -63,26 +64,26 @@
             <Spinner
                 android:id="@+id/spinner"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"/>
 
             <ListView
                 android:id="@+id/listview"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/table_kalori" />
 
             <Button
+                android:id="@+id/btnResetKalori"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:textAlignment="center"
                 android:background="#f39c12"
-                android:text="+ Tambah"
+                android:text="RESET"
                 android:textSize="20sp"
                 android:textColor="#fff"/>
         </LinearLayout>
     </ScrollView>
-
-
-
-
-</LinearLayout>
+</RelativeLayout>

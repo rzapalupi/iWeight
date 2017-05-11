@@ -188,19 +188,24 @@
             android:id="@+id/txtTips"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:text="Tips Sehat"
             android:textAlignment="center"
             android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e74c3c"
+            android:layout_margin="20dp"
+            />
 
         <TextView
             android:id="@+id/txtTips1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="Tips Diet Cepat Tanpa Rasa Lapar 1"
+            android:text="Tips Menambah Berat badan"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/txtTips2"
@@ -209,7 +214,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="Tips Diet Cepat Tanpa Rasa Lapar 2"
+            android:text="Tips Menjaga Berat Badan"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/txtTips3"
@@ -218,7 +223,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="Tips Diet Cepat Tanpa Rasa Lapar 3"
+            android:text="Macam-macam Diet"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/txtTips4"
@@ -227,16 +232,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="Tips Diet Cepat Tanpa Rasa Lapar 4"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/txtTips5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:text="Tips Diet Cepat Tanpa Rasa Lapar 5"
+            android:text="Mencegah Diabetes"
             android:textSize="20sp" />
 
         <TextView
@@ -248,7 +244,7 @@
             android:layout_marginRight="20dp"
             android:text="Selengkapnya, lihat disini >"
             android:textSize="20sp"
-            android:textColor="#331eff"/>
+            android:textColor="#e74c3c"/>
 
         <View
             android:layout_width="match_parent"

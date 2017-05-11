@@ -11,6 +11,7 @@ import android.widget.Toast;
 public class BMIResultActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView txtResultBMI, txtResultBMR, txtStatus, txtDeskripsi;
+    TextView txtTips1, txtTips2, txtTips3, txtTips4, txtTipsLengkap;
     Button btnKalori_2;
 
     @Override
@@ -22,6 +23,12 @@ public class BMIResultActivity extends AppCompatActivity implements View.OnClick
         txtResultBMR        = (TextView) findViewById(R.id.txtResultBMR);
         txtStatus           = (TextView) findViewById(R.id.txtStatus);
         txtDeskripsi        = (TextView) findViewById(R.id.txtDeskripsi) ;
+
+        txtTips1            = (TextView) findViewById(R.id.txtTips1);
+        txtTips2            = (TextView) findViewById(R.id.txtTips2);
+        txtTips3            = (TextView) findViewById(R.id.txtTips3);
+        txtTips4            = (TextView) findViewById(R.id.txtTips4);
+        txtTipsLengkap      = (TextView) findViewById(R.id.txtTipsSelengkapnya);
 
         btnKalori_2         = (Button) findViewById(R.id.btnKalori_2);
 
@@ -39,6 +46,11 @@ public class BMIResultActivity extends AppCompatActivity implements View.OnClick
 
 
         btnKalori_2.setOnClickListener(this);
+        txtTips1.setOnClickListener(this);
+        txtTips2.setOnClickListener(this);
+        txtTips3.setOnClickListener(this);
+        txtTips4.setOnClickListener(this);
+        txtTipsLengkap.setOnClickListener(this);
     }
 
     @Override
@@ -47,6 +59,11 @@ public class BMIResultActivity extends AppCompatActivity implements View.OnClick
             String hasilbmr = txtResultBMR.getText().toString();
             Intent intent = new Intent (this, KaloriActivity.class);
             intent.putExtra("hasilmbr",hasilbmr);
+            startActivity(intent);
+        } else if (v.getId() == R.id.txtTips1 || v.getId() == R.id.txtTips2 ||
+                v.getId() == R.id.txtTips3 || v.getId() == R.id.txtTips4 ||
+                v.getId() == R.id.txtTipsSelengkapnya) {
+            Intent intent = new Intent (this, TipsActivity.class);
             startActivity(intent);
         }
 

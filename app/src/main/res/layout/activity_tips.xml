@@ -26,7 +26,7 @@
                     android:layout_height="100dp"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
-                    android:background="@drawable/background_dasar"
+                    android:background="@drawable/tips_menambah_berat_badan"
                     android:scaleType="centerCrop" />
 
                 <TextView
@@ -55,6 +55,375 @@
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:background="#dbdbdb"></View>
+
+            <RelativeLayout
+                android:id="@+id/rlBerita1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/Image1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/menambah_berat_badan_wanita"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/Judul1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/Image1"
+                    android:text="Menambah Berat Badan Wanita"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Ket1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sumber : www.iweight.com" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#dbdbdb"></View>
+
+
+            <RelativeLayout
+                android:id="@+id/rlBerita2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/Image2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/makanan_sehat_penambah_berat_badan"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/Judul2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/Image2"
+                    android:text="Makanan Sehat Penambah Berat Badan"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Ket2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sumber : www.iweight.com" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#dbdbdb"></View>
+
+            <RelativeLayout
+                android:id="@+id/rlBerita3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/Image3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/olahraga_yg_baik"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/Judul3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/Image3"
+                    android:text="Olahraga Yang Baik"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Ket3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sumber : www.iweight.com" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#dbdbdb"></View>
+
+            <RelativeLayout
+                android:id="@+id/rlBerita4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/Image4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/tips_menjaga_berat_badan"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/Judul4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/Image4"
+                    android:text="Tips Menjaga Berat Badan"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Ket4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sumber : www.iweight.com" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#dbdbdb"></View>
+            <RelativeLayout
+                android:id="@+id/rlBerita5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/Image5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/tips_merawat_tubuh"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/Judul5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/Image5"
+                    android:text="Tips Merawat Tubuh"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Ket5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sumber : www.iweight.com" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#dbdbdb"></View>
+
+            <RelativeLayout
+                android:id="@+id/rlBerita6"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/Image6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/macam_macam_diet"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/Judul6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/Image6"
+                    android:text="Macam-macam Diet"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Ket6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sumber : www.iweight.com" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#dbdbdb"></View>
+
+            <RelativeLayout
+                android:id="@+id/rlBerita7"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/Image7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/menu_diet"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/Judul7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/Image7"
+                    android:text="Menu Diet"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Ket7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sumber : www.iweight.com" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#dbdbdb"></View>
+
+            <RelativeLayout
+                android:id="@+id/rlBerita8"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/Image8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/tidur_setelah_makan"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/Judul8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/Image8"
+                    android:text="Tidur Setelah Makan"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Ket8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sumber : www.iweight.com" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#dbdbdb"></View>
+            <RelativeLayout
+                android:id="@+id/rlBerita9"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/Image9"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/mencegah_deiabetes"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/Judul9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/Image9"
+                    android:text="Mencegah Diabetes"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/Ket9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sumber : www.iweight.com" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#dbdbdb"></View>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

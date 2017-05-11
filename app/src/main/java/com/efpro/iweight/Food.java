@@ -1,9 +1,5 @@
 package com.efpro.iweight;
 
-/**
- * Created by rzapalupi on 5/11/2017.
- */
-
 public class Food {
 
     private int id;
