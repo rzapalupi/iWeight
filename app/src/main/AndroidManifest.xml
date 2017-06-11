@@ -63,6 +63,11 @@
             android:label="Profile"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

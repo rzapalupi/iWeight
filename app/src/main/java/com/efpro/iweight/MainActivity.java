@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //Inisialisasi View
     Button btnBMI, btnKalori, btnTips, btnAbout;
     TextView txtNama, txtUmur,  txtGender, txtBeratBadan, txtTinggiBadan, btnEdit, txtStatusMenu;
+    DBHandler db = new DBHandler(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         txtStatusMenu = (TextView) findViewById(R.id.txtStatusMenu);
 
         Intent intent   = getIntent();
-        String v_nama   = intent.getStringExtra("txtNama");
+        String v_nama   = intent.getStringExtra("txtN  ama");
         String v_umur   = intent.getStringExtra("txtUmur");
         String v_gender = intent.getStringExtra("txtGender");
         String v_bb     = intent.getStringExtra("txtBeratBadan");
@@ -78,4 +79,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }
     }
+
 }

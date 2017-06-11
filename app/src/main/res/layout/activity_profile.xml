@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:background="#dbdbdb">
     <LinearLayout
+        android:id="@+id/Linear1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#fff"
@@ -64,7 +65,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:textSize="20sp"/>
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="0dp"
@@ -140,7 +142,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="Berat Badan"
+                android:text="Berat"
                 android:textSize="20sp"/>
 
             <TextView
@@ -178,7 +180,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="Tinggi Badan"
+                android:text="Tinggi"
                 android:textSize="20sp"/>
 
             <TextView
@@ -205,6 +207,37 @@
 
         <LinearLayout
             android:id="@+id/line6"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Aktifitas"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:prompt="@string/aktifitas_prompt"
+                android:entries="@array/aktifitas_array"
+                android:textSize="20sp"
+                android:textColor="@color/text_default"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -212,26 +245,55 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/btnSave"
+                android:id="@+id/btnBatal"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Simpan"
+                android:text="Batal"
                 android:textColor="#fff"
                 android:background="@drawable/button_about"
                 android:textSize="20sp"/>
 
             <Button
-                android:id="@+id/btnCancel"
+                android:id="@+id/btnSave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_about"
-                android:text="Batal"
+                android:text="Simpan"
                 android:textColor="#fff"
                 android:textSize="20sp" />
         </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/Linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keterangan Aktifitas :
+\n\n- Tidak Aktif   \nTidak melakukan kegiatan, hanya istirahat saja.
+\n\n- Kurang Aktif  \nMelakukan kegiatan-kegiatan ringan, tanpa olahraga
+\n\n- Aktif         \nMelakukan kegiatan sehari-hari, dan olahraga.
+\n\n- Sangat Aktif  \nMelakukan kegiatan berat dan olahraga."
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 </RelativeLayout>
